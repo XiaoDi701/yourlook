@@ -34,7 +34,7 @@ function preload() {
     loadImage(
       imgPath,
       (img) => {
-        console.log(22);
+        console.log(`👃 Loaded: ${imgPath}`);
         noseImages.push(img);
       },
       (err) => console.error(3)
@@ -47,7 +47,7 @@ function preload() {
     loadImage(
       imgPath,
       (img) => {
-        console.log(11);
+        console.log(`👄 Loaded: ${imgPath}`);
         mouthImages.push(img);
       },
       (err) => console.error(4)
@@ -198,4 +198,10 @@ function draw() {
   }
 
   if (frontImg) image(frontImg, 0, 0, width, height);
+
+  // 马赛克覆盖层（轻度）
+  let mosaic = get();
+  mosaic.resize(width / 4, height / 4);
+  mosaic.resize(width, height);
+  image(mosaic, 0, 0);
 }
