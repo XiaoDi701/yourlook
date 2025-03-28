@@ -199,7 +199,6 @@ function draw() {
 
   if (frontImg) image(frontImg, 0, 0, width, height);
 
-  // 马赛克覆盖层（轻度）
   let mosaic = get();
   mosaic.resize(width / 4, height / 4);
   mosaic.resize(width, height);
