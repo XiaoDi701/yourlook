@@ -34,7 +34,7 @@ function preload() {
     loadImage(
       imgPath,
       (img) => {
-        console.log(`👃 Loaded: ${imgPath}`);
+        console.log(22);
         noseImages.push(img);
       },
       (err) => console.error(3)
@@ -47,7 +47,7 @@ function preload() {
     loadImage(
       imgPath,
       (img) => {
-        console.log(`👄 Loaded: ${imgPath}`);
+        console.log(11);
         mouthImages.push(img);
       },
       (err) => console.error(4)
